@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/dropzone.css')
+    script(type='text/javascript', src='/javascripts/jquery-2.1.4.min.js')
+    script(type='text/javascript', src='/javascripts/utils.js')
+    script(type='text/javascript', src='/javascripts/scripts.js')
+    script(type='text/javascript', src='/javascripts/dropzone.js')
+    script(type='text/javascript', src='/javascripts/jquery.tablesorter.js')
+  body
+    #topnav
+      .navbar
+        .nb-left-area
+          a.nb-button-link.top_home
+            img(src="images/bluemix-logo.png").nb-bluemix-logo
+            a.nb-button-link.top_home
+              span.nb-devopsservices-text IBM <b>Bluemix</b> Architecture Center
+    block content

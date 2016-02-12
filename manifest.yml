@@ -1,0 +1,22 @@
+---
+declared-services:
+  HDS-SecureGateway:
+    label: SecureGateway
+    plan: securegatewayplan
+  HDS-SingleSignOn:
+    label: SingleSignOn
+    plan: standard
+  HDS-objectstorage:
+    label: Object-Storage
+    plan: Beta
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  name: hybrid-data-store
+  host: hybrid-data-store
+  disk_quota: 1024M
+  services:
+    - HDS-SecureGateway
+    - HDS-objectstorage
+  command: node Node/bin/www.js

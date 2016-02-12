@@ -1,0 +1,283 @@
+body {
+  padding: 50px;
+  background-color: #152935;
+  color: white;
+}
+
+a, a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #c0e6ff;
+  text-decoration: none;
+}
+
+h3 a {
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+h1 {
+  color: #c0e6ff;
+}
+
+h3 {
+  padding-bottom: 20px;
+}
+
+hr {
+  margin-left: -15px;
+  margin-right: -15px;
+  border-top: 1px solid #5596e6;
+}
+
+.upload {
+  width: 100%;
+  position: relative;
+}
+
+.head-container {
+  width: 100%;
+
+}
+
+.text {
+  font-size:1.5em;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+#file-upload {
+  height: 0px;
+  width: 0px;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #286090;
+  display: none;
+  position: relative;
+  vertical-align: top !important;
+}
+
+.minimize {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  content: "" !important;
+  background: url("/images/minimize-blue.png") no-repeat 0 0 !important;
+  background-size: 100% !important;
+  height: 35px;
+  width: 45px;
+  z-index: 10;
+  cursor: pointer !important;
+}
+
+.dz-preview {
+  height: 80px;
+  width: 200px;
+  margin-left: 19px !important;
+  margin-top: 15px !important;
+  margin-right: 0px !important;
+  margin-bottom: 15px !important;
+}
+
+.dz-message {
+  margin: 0em 0 !important;
+  width: 100%;
+  height: 100%;
+  color: #337ab7 !important;
+  font-size: 1.2em;
+  font-weight: bold;
+  display:inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.dz-message span {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dz-image {
+  content: "" !important;
+  background: url("/images/FileImage.png") no-repeat 0 0 !important;
+  background-size: 100% !important;
+  border-radius: 0px !important;
+  height: 105px !important;
+  width: 80px !important;
+}
+
+.dz-preview .dz-image img{
+  display: none !important;
+}
+
+.dz-filename {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  margin-left: -2px !important;
+}
+
+.dz-size {
+  font-size: 14px !important;
+}
+
+.dz-progress {
+  left: 15px !important;
+  margin-top: 0px !important;
+  margin-left: 0px !important;
+  border: 2px dashed black;
+  height: 18px !important;
+  width: 50px !important;
+}
+
+.dz-details {
+  text-align: left !important;
+  left: auto !important;
+  right: 15px !important;
+  width: 60% !important;
+  opacity: 1 !important;
+  min-width: 60% !important;
+  max-width: 60% !important;
+}
+
+.dz-remove {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  content: "" !important;
+  background: url("/images/DeleteButton.png") no-repeat 0 0 !important;
+  background-size: 100% !important;
+  height: 25px;
+  width: 25px;
+  z-index: 10;
+}
+
+.dz-success-mark, .dz-error-mark {
+  left: 13px !important;
+  margin-left: 0px !important;
+}
+
+.btn-container {
+  text-align: right;
+}
+
+#start, #removeAll {
+  display: none;
+  width: 0px;
+  height: 0px;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.active-tab {
+  font-weight: bold;
+  color: #c0e6ff !important;
+  text-decoration: underline !important;
+}
+
+.tablesorter {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.tablesorter tr {
+  height: 40px;
+}
+
+.tablesorter tr td {
+  padding: 10px;
+}
+
+#head {
+  font-weight: bolder;
+  font-size: 1.3em;
+  border-bottom: 2px solid white;
+}
+
+#head th {
+  padding: 10px;
+}
+
+.even {
+  background-color: #263c48;
+}
+
+.del {
+  width: 35px;
+}
+
+.delBox {
+  padding: 0px !important;
+  text-align: center;
+}
+
+img {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+.objName, .onPremName {
+  cursor: pointer;
+}
+
+.navbar {
+	background: #152935;
+	height: 50px;
+	line-height: 50px;
+	font-weight: 300;
+	font-size: 9pt;
+	z-index: 150;
+	min-width: 100%;
+	border-bottom: 1px solid #5596E6;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	border-radius: 0;
+}
+
+.navbar .nb-left-area {
+	float: left;
+	height: 50px;
+	color: #ffffff;
+}
+
+.navbar .nb-button-link {
+	position: relative;
+	text-decoration: none;
+	color: #94a3ab;
+	margin: 0 10px 0 10px;
+	height: 50px;
+}
+
+.navbar .nb-left-area .nb-bluemix-logo {
+  vertical-align: top;
+  margin-top: 8px;
+  width: 32px;
+  height: 32px;
+}
+
+.glyphicon-menu-hamburger {
+	display: none;
+	font-size: 14px;
+    color: #94A3AB;
+    padding: 3px;
+    cursor: pointer;
+    margin-left: -7px;
+}
+
+.glyphicon-menu-hamburger:hover {
+	color: #5AAAFA;
+}
+
+.navbar .nb-left-area .nb-devopsservices-text {
+  font-weight: 300;
+  font-size: 14px;
+  color: #FFFFFF;
+}

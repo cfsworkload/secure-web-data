@@ -1,0 +1,39 @@
+extends layout
+block content
+    .container
+        br
+        h1 Hybrid Data Storage
+        br
+        .upload
+            table
+                tr
+                    td.text Where do you want to upload your files?
+                    td.btn-group
+                        #obj-upload.btn.btn-lg.btn-primary
+                            abbr Object Storage
+                        #onprem-upload.btn.btn-lg.btn-primary
+                            abbr On Premises
+            br
+            form(action="/api/obj/public/form")#file-upload.dropzone.dz-clickable
+                .dz-message
+                    span Drop files or click here to upload
+                .minimize
+            br
+            .btn-container
+                #start.btn.btn-success.disabled Upload
+                #removeAll.btn.btn-danger.disabled Cancel All
+        hr
+        h3
+            a#all.active-tab All Files
+            a#obj Object Storage
+            a#onprem On Premises
+        h4
+            table#table.tablesorter
+                thead
+                    tr#head
+                        th Name
+                        th Storage
+                        th.del
+                tbody#files
+                    script(type='text/javascript').
+                        listFiles("/api/obj/public/", "/api/onprem/public");
