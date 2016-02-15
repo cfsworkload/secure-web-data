@@ -1,12 +1,12 @@
 ---
 declared-services:
-  HDS-SecureGateway:
+  SWD-SecureGateway:
     label: SecureGateway
     plan: securegatewayplan
-  HDS-SingleSignOn:
+  SWD-SingleSignOn:
     label: SingleSignOn
     plan: standard
-  HDS-objectstorage:
+  SWD-objectstorage:
     label: Object-Storage
     plan: Beta
 applications:
@@ -17,6 +17,6 @@ applications:
   host: hybrid-data-store
   disk_quota: 1024M
   services:
-    - HDS-SecureGateway
-    - HDS-objectstorage
+    - SWD-SecureGateway
+    - SWD-objectstorage
   command: node Node/bin/www.js
