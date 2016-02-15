@@ -123,17 +123,17 @@ For example:
 
 ## Set up a deployment pipeline
 
-You can now configure your application's deployment pipeline. This pipeline will build, deploy, and test that your application
-is up and running after deployment. You will first build and deploy the application to Bluemix, which will provide your application's external IP, and then you'll create a test stage.
+You can now configure your application's deployment pipeline. This pipeline will build, deploy to a container, and test that your application is up and running after deployment. You will first build and deploy the application to Bluemix, which will provide your application's external IP, and then you'll create a test stage.
 
 1. Add a build stage to your pipeline.
 	1. On your DevOps Services project page, click **BUILD & DEPLOY** at the top right. This opens your pipeline IDE.
-	2. Click **ADD STAGE** and name the stage "Build."
-	3. On **INPUT** leave the default settings and click the **JOBS** tab.
-	4. Click **ADD JOB** and then select **Build**.
-	5. In **Builder Type** select **IBM Container Service**.
-	6. Leave the default settings and give your image a name in **Image Name**.
-	7. Click **SAVE**.
+	2. Delete the two stages that were created by the deploy to bluemix button.
+        3. Click **ADD STAGE** and name the stage "Build."
+	4. On **INPUT** leave the default settings and click the **JOBS** tab.
+	5. Click **ADD JOB** and then select **Build**.
+	6. In **Builder Type** select **IBM Container Service**.
+	7. Leave the default settings and give your image a name in **Image Name**.
+	8. Click **SAVE**.
 	
 2. Add a deploy stage to your pipeline.
 	1. Click **ADD STAGE** and name the new stage "Deploy."
