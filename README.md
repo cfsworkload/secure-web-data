@@ -128,7 +128,7 @@ You can now configure your application's deployment pipeline. This pipeline will
 1. Add a build stage to your pipeline.
 	1. On your DevOps Services project page, click **BUILD & DEPLOY** at the top right. This opens your pipeline IDE.
 	2. Delete the two stages that were created by the deploy to bluemix button.
-        3. Click **ADD STAGE** and name the stage "Build."
+	3. Click **ADD STAGE** and name the stage "Build."
 	4. On **INPUT** leave the default settings and click the **JOBS** tab.
 	5. Click **ADD JOB** and then select **Build**.
 	6. In **Builder Type** select **IBM Container Service**.
