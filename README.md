@@ -24,7 +24,7 @@ When you sign up, you'll create an IBM ID, create an alias, and register with Bl
 
 Use the **Push to Bluemix** button bellow to fork the code, create the needed Cloud Foundry bridge application, and create / bind needed services to your Bluemix space. 
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://hub.jazz.net/git/cfsworkload/hybrid-data-store-app)
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/cfsworkload/secure-web-data.git)
  
 Continue to configure single sign on.
 
